@@ -2610,8 +2610,7 @@ body {
 .filter-tabs {
   display: flex !important;
   gap: 10px !important;
-  padding: 0 20px !important;
-  margin-bottom: 20px !important;
+  padding: 0 20px 24px !important;
   overflow-x: auto !important;
   overflow-y: hidden !important;
   flex-wrap: nowrap !important;
@@ -2663,4 +2662,52 @@ body {
 .cosmos-books,
 .hero-glow {
   pointer-events: none;
+}
+
+
+#homeScreen {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+}
+
+.filter-tabs,
+.sec-hd {
+  flex-shrink: 0 !important;
+  width: 100% !important;
+  align-self: stretch !important;
+}
+
+.filter-tabs {
+  order: 0;
+}
+
+.sec-hd {
+  order: 1;
+}
+
+.filter-tabs {
+  padding-bottom: 8px !important;
+  margin-bottom: 0 !important;
+}
+
+.sec-hd {
+  padding-top: 4px !important;
+  margin-top: 0 !important;
+}
+
+@media (min-width: 1024px) {
+  .filter-tabs {
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    overflow-x: visible !important;
+    padding-bottom: 12px !important;
+  }
+
+  .sec-hd {
+    max-width: 1280px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-top: 8px !important;
+  }
 }
